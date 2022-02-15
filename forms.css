@@ -1,0 +1,33 @@
+
+main, header, article, aside, nav, footer {
+    border: solid, 1px, black;
+    padding: 5px;
+}
+
+main {
+    display: grid;
+    grid-template-areas: "h h"
+                         "n n"
+                         "a as"
+                         "f f";
+}
+
+header {
+    grid-area: h;
+}
+
+nav {
+    grid-area: n;
+}
+
+article {
+    grid-area: a;
+}
+
+aside {
+    grid-area: as;
+}
+
+footer {
+    grid-area: f;
+}
