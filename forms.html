@@ -5,14 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="forms.css">
-    <title>Document</title>
+    <title>Farsang</title>
 </head>
 <body>
     <main>
         <header><h1>Üdv</h1></header>
         <article>
             <h2>Bejelentkezés</h2>
-            
+            <form action="/action_page.php">
+                <label for="fname">Felhasználó név/email:</label><br>
+                <input type="text" id="fname" name="fname" value="Felhasználónév/email"><br>
+                <label for="lname">Jelszó:</label><br>
+                <input type="text" id="lname" name="lname" value="Jelszó"><br><br>
+                <input type="submit" value="Bejelentkezés">
+              </form> 
         </article>
         <aside>
             <h2>Regisztráció</h2>
