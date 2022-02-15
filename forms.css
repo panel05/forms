@@ -25,8 +25,12 @@ nav {
 }
 
 article {
-    grid-area: a;
     text-align: center;
+    grid-area: a;
+    display: grid;
+    grid-template-areas: "x c"
+                         "x f";
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 input[type="submit"] {
@@ -36,16 +40,34 @@ input[type="submit"] {
     width: 150px;
     border-radius: 5px;
     border: solid 1px blue;
+    grid-area: s;
 }
 
 aside {
     grid-area: as;
+    display: grid;
+    grid-template-areas: "x c"
+                         "x f";
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+article>h2 {
+    grid-area: c;
+}
+
+aside>h2 {
+    grid-area: c;
+}
+
+form {
+    grid-area: f;
 }
 
 form>div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-area: as;
+    margin: 10px;
+    text-align: right;
 }
 
 footer {
