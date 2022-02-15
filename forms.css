@@ -1,5 +1,5 @@
 
-main, header, article, aside, nav, footer {
+header, article, aside, nav{
     border: solid 1px black;
     padding: 5px;
 }
@@ -26,6 +26,15 @@ nav {
 article {
     grid-area: a;
     text-align: center;
+}
+
+input[type=submit] {
+    color: white;
+    background-color: blue;
+    padding: 10px;
+    width: 150px;
+    border-radius: 5px;
+    border: solid 1px blue;
 }
 
 aside {
