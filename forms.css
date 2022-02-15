@@ -1,17 +1,18 @@
-
-header, article, aside, nav{
+header, article, aside, nav {
     border: solid 1px black;
     padding: 5px;
 }
 
 main {
     display: grid;
-    grid-template-areas: "h h"
-                         "n n"
-                         "a as"
-                         "f f";
+    grid-template-areas:
+    "h h"
+    "n n"
+    "a as"
+    "f f";
     width: 80%;
     margin: auto;
+    background-color: aliceblue;
 }
 
 header {
@@ -25,9 +26,10 @@ nav {
 
 article {
     grid-area: a;
+    text-align: center;
 }
 
-input[type=submit] {
+input[type="submit"] {
     color: white;
     background-color: blue;
     padding: 10px;
@@ -43,8 +45,13 @@ aside {
 form>div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-area: as;
 }
 
 footer {
     grid-area: f;
+}
+
+body {
+    background: url(kepek/hatter.jpg);
 }
