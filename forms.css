@@ -25,7 +25,6 @@ nav {
 
 article {
     grid-area: a;
-    text-align: center;
 }
 
 input[type=submit] {
@@ -39,7 +38,11 @@ input[type=submit] {
 
 aside {
     grid-area: as;
-    text-align: center;
+}
+
+form>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 footer {
