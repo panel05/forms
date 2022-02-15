@@ -10,6 +10,8 @@ main {
                          "n n"
                          "a as"
                          "f f";
+    width: 80%;
+    margin: auto;
 }
 
 header {
@@ -23,10 +25,12 @@ nav {
 
 article {
     grid-area: a;
+    text-align: center;
 }
 
 aside {
     grid-area: as;
+    text-align: center;
 }
 
 footer {
