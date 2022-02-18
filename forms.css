@@ -5,11 +5,8 @@ header, article, aside, nav {
 
 main {
     display: grid;
-    grid-template-areas:
-    "h h"
-    "n n"
-    "a as"
-    "f f";
+    grid-template-areas: "h h"
+                         "a as";
     width: 80%;
     margin: auto;
     background-color: aliceblue;
@@ -20,13 +17,16 @@ header {
     text-align: center;
 }
 
-nav {
-    grid-area: n;
+article {
+    grid-area: a;
 }
 
-article {
+aside {
+    grid-area: as;
+}
+
+article, aside {
     text-align: center;
-    grid-area: a;
     display: grid;
     grid-template-areas: "x c"
                          "x f";
@@ -40,34 +40,27 @@ input[type="submit"] {
     width: 150px;
     border-radius: 5px;
     border: solid 1px blue;
-    grid-area: s;
+    margin: auto;
 }
 
-aside {
-    grid-area: as;
-    display: grid;
-    grid-template-areas: "x c"
-                         "x f";
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-article>h2 {
-    grid-area: c;
-}
-
-aside>h2 {
+article>h2, aside>h2 {
     grid-area: c;
 }
 
 form {
     grid-area: f;
+    margin-bottom: 20px;
 }
 
 form>div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 10px;
+    margin-bottom: 10px;
     text-align: right;
+}
+
+form>div>label, form>div>input {
+    margin-bottom: 5px;
 }
 
 footer {
@@ -76,4 +69,13 @@ footer {
 
 body {
     background: url(kepek/hatter.jpg);
+}
+
+@media screen and (max-width:700px) {
+    
+    main {
+        grid-template-areas: "h"
+                             "a"
+                             "as";
+    }
 }
