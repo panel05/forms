@@ -1,3 +1,7 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 header, article, aside, nav {
     border: solid 1px black;
     padding: 5px;
@@ -41,6 +45,10 @@ input[type="submit"] {
     border-radius: 5px;
     border: solid 1px blue;
     margin: auto;
+}
+
+input[type="submit"]:hover {
+   background-color: rgb(65, 65, 255);
 }
 
 article>h2, aside>h2 {
